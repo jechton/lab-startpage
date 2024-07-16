@@ -3,27 +3,27 @@ let currentIndex =
   document.currentScript.getAttribute("currentIndex");
 currentIndex = parseInt(currentIndex);
 
-const images = ["cover1.webp", "cover2.webp", "cover3.webp"];
+const images = ["makima.png", "himeno.png", "komaeda.png"];
 const colorSets = [
   {
-    "--text-color": "#c0caf5",
-    "--hover-color": "#bb9af7",
-    "--accent-color": "#7aa2f7",
-    "--accent-color-2": "#f7768e",
-    "--background-color": "#1a1b26",
+    "--text-color": "#e6d6cb",
+    "--hover-color": "#2b6767",
+    "--accent-color": "#d57811",
+    "--accent-color-2": "#9b380b",
+    "--background-color": "#130e0d",
   },
   {
-    "--text-color": "#9fadc6",
-    "--hover-color": "#9B5856",
-    "--accent-color": "#28725A",
-    "--accent-color-2": "#D2C7CB",
-    "--background-color": "#15191d",
+    "--text-color": "#e9dbd9",
+    "--hover-color": "#4c9da1",
+    "--accent-color": "#52a05b",
+    "--accent-color-2": "#b7d5ad",
+    "--background-color": "#03030e",
   },
   {
-    "--text-color": "#c0caf5",
-    "--hover-color": "#e0af68",
-    "--accent-color": "#7aa2f7",
-    "--accent-color-2": "#bb9af7",
+    "--text-color": "#fcfbfb",
+    "--hover-color": "#92a359",
+    "--accent-color": "#9c3109",
+    "--accent-color-2": "#fdc1fd",
     "--background-color": "#1a1b26",
   },
 ];
@@ -31,7 +31,7 @@ const colorSets = [
 function preloadImages() {
   for (let i = 0; i < images.length; i++) {
     const img = new Image();
-    img.src = "../src/images/" + images[i];
+    img.src = "./images/" + images[i];
   }
 }
 
@@ -43,7 +43,7 @@ function nextImage() {
   updateColors(currentIndex);
 
   setTimeout(() => {
-    imageElement.src = "../src/images/" + images[currentIndex];
+    imageElement.src = "./images/" + images[currentIndex];
     imageElement.style.opacity = 1;
   }, 200); // Match the transition duration in style.css
 }
@@ -61,14 +61,14 @@ updateColors(currentIndex);
 
 // Set the initial image
 document.getElementById("carouselImage").src =
-  "../src/images/" + images[currentIndex];
+  "./images/" + images[currentIndex];
 
 // Image is opacity 0 and text is translated off screen by default
 // Add the loaded class to the image and text to animate them in
 window.onload = function () {
   document.getElementById("image").classList.add("loaded");
   document.getElementById("text").classList.add("loaded");
-	document.getElementsByTagName("html")[0].classList.add("loaded");
+  document.getElementsByTagName("html")[0].classList.add("loaded");
   // Preload the remaining images
   preloadImages();
 };

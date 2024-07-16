@@ -1,16 +1,14 @@
 # startpage
 
-Yet another minimal startpage (now with multitheme!):
-- Font: SpaceMono Nerd Font
-- Colour Scheme(s): Tokyo Night, Colours derived from cover image
+very cool startpage forked from [fazzi on gitlab](https://gitlab.com/fazzi/startpage)!
 
-> **NOTE**: keep in mind that I don't own any rights to the images included in this repository.
+key modifications:
 
-[fazzi's startpage](https://fazzi.gitlab.io/startpage/fazzi/ "fazzi's startpage")
+- anime images lol
+- generating the links from json
+- time formatting
 
-[sam's startpage](https://fazzi.gitlab.io/startpage/sam/ "sam's startpage")
-
-[kunzooz's startpage](https://fazzi.gitlab.io/startpage/kunzooz/ "kunzooz's startpage")
+> **NOTE**: i don't own any rights to the images included in this repository. they were all sourced from [gelbooru](https://gelbooru.com).
 
 ### Preview:
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>~/startpage 💤</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div
+      id="image"
+      onclick="nextImage()"
+      oncontextmenu="nextBg(); return false;"
+    >
+      <img id="carouselImage" src="./images/cover1.webp" />
+    </div>
+    <div id="text">
+      <div id="greeting">Welcome $HOME!</div>
+      <div id="date"></div>
+      <div id="links"></div>
+    </div>
+  </body>
+  <script id="data" type="application/json">
+    {
+      "./dev": {
+        "Exercism": "https://exercism.org/",
+        "freeCodeCamp": "https://freecodecamp.org/",
+        "Frontend Mentor": "https://frontendmentor.io/",
+        "GitHub": "https://github.com/",
+        "Scrimba": "https://scrimba.com/"
+      },
+      "./google": {
+        "Calendar": "https://calendar.google.com",
+        "Gmail": "https://mail.google.com",
+        "Maps": "https://maps.google.com"
+      },
+      "./media": {
+        "Ao3": "https://archiveofourown.org/",
+        "Lo-fi ATC": "https://www.lofiatc.com/",
+        "musicForProgramming": "https://musicforprogramming.net/",
+        "YouTube": "https://youtube.com"
+      },
+      "./surf": {
+        "Cohost": "https://cohost.org/",
+        "Pinterest": "https://pinterest.com/",
+        "Reddit": "https://reddit.com/",
+        "Tech.LGBT": "https://tech.lgbt/",
+        "Toyhouse": "https://toyhou.se",
+        "Tumblr": "https://tumblr.com"
+      }
+    }
+  </script>
+  <script async src="./js/date.js"></script>
+  <script async src="./js/links.js"></script>
+  <script async src="./js/theme.js" currentIndex="0"></script>
+</html>
