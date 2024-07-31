@@ -3,8 +3,29 @@ let currentIndex =
   document.currentScript.getAttribute("currentIndex");
 currentIndex = parseInt(currentIndex);
 
-const images = ["makima.png", "himeno.png", "komaeda.png"];
+const images = [
+  "himeno.png",
+  "komaeda.png",
+  "makima.png",
+  "task_failed_successfully.webp",
+  "zzz_untitled1.png",
+];
 const colorSets = [
+  {
+    "--text-color": "#e9dbd9",
+    "--hover-color": "#4c9da1",
+    "--accent-color": "#52a05b",
+    "--accent-color-2": "#b7d5ad",
+    "--background-color": "#03030e",
+  },
+
+  {
+    "--text-color": "#fcfbfb",
+    "--hover-color": "#92a359",
+    "--accent-color": "#9c3109",
+    "--accent-color-2": "#fdc1fd",
+    "--background-color": "#041514",
+  },
   {
     "--text-color": "#e6d6cb",
     "--hover-color": "#2b6767",
@@ -13,18 +34,18 @@ const colorSets = [
     "--background-color": "#130e0d",
   },
   {
-    "--text-color": "#e9dbd9",
-    "--hover-color": "#4c9da1",
-    "--accent-color": "#52a05b",
-    "--accent-color-2": "#b7d5ad",
-    "--background-color": "#03030e",
+    "--text-color": "#f9fffe",
+    "--hover-color": "#b5ffef",
+    "--accent-color": "#4a9454",
+    "--accent-color-2": "#8cd4fc",
+    "--background-color": "#010c0e",
   },
   {
-    "--text-color": "#fcfbfb",
-    "--hover-color": "#92a359",
-    "--accent-color": "#9c3109",
-    "--accent-color-2": "#fdc1fd",
-    "--background-color": "#041514",
+    "--text-color": "#d8bdc5",
+    "--hover-color": "#e5a7b0",
+    "--accent-color": "#c66873",
+    "--accent-color-2": "#8eacaf",
+    "--background-color": "#141319",
   },
 ];
 

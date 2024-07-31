@@ -1,7 +1,8 @@
 @font-face {
   font-family: "SpaceMono Nerd Font";
   font-display: swap;
-  src: local("SpaceMono Nerd Font"),
+  src:
+    local("SpaceMono Nerd Font"),
     url(../fonts/SpaceMonoNF.woff2) format("woff2"),
     url(../fonts/SpaceMonoNF.woff) format("woff");
 }
@@ -11,7 +12,9 @@
 }
 
 img {
-  transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+  transition:
+    transform 0.15s ease-in-out,
+    opacity 0.2s ease-in-out;
 }
 
 html {
@@ -31,7 +34,9 @@ html.loaded {
 body {
   display: flex;
   color: var(--text-color);
-  font-family: SpaceMono Nerd Font, monospace;
+  font-family:
+    SpaceMono Nerd Font,
+    monospace;
   justify-content: center;
   align-items: center;
 }
@@ -122,7 +127,7 @@ a {
 
 a:hover {
   color: var(--hover-color);
-  font-weight: bold;
+  text-decoration: wavy underline;
 }
 
 .urls:nth-child(even) {

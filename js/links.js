@@ -4,7 +4,7 @@
 
   // Sort top-level categories (case-insensitive)
   const sortedCategories = Object.keys(data).sort((a, b) =>
-    a.localeCompare(b, undefined, { sensitivity: "case" })
+    a.localeCompare(b, undefined, { sensitivity: "case" }),
   );
 
   // Loop through sorted categories
@@ -21,7 +21,7 @@
 
     // Sort links within the category (case-insensitive)
     const sortedLinks = Object.keys(data[category]).sort((a, b) =>
-      a.localeCompare(b, undefined, { sensitivity: "case" })
+      a.localeCompare(b, undefined, { sensitivity: "case" }),
     );
 
     // Loop through sorted links and create elements
