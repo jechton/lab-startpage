@@ -12,7 +12,7 @@ function showTime() {
   };
 
   const formattedDate = date.toLocaleString("en-US", options);
-  const [dayOfWeek, dateStr, time] = formattedDate.split(/,|at/);
+  const [dayOfWeek, dateStr, time] = formattedDate.split(/,|\bat\b/);
 
   dateElement.innerHTML = `${dayOfWeek}, ${time} | ${dateStr}`;
 }
